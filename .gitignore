@@ -1,3 +1,8 @@
+# ignore models as they are too large and can be always downloaded from huggingface
+models/*
+
+benchmarking/trace.json
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
