@@ -1,7 +1,7 @@
 import customtkinter
-from Model import Model
-from View import View
-from Controller import Controller
+from model import Model
+from view import View
+from controller import Controller
 
 if __name__ == "__main__":
     root = customtkinter.CTk()

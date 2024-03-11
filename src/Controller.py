@@ -18,4 +18,4 @@ class Controller:
                 result = self.generator(prompt, max_length=1024, num_return_sequences=1, temperature=0.0)
                 generated_text = result[0]["generated_text"][len(prompt):].strip()
                 print(generated_text)
-                view.print_generated_text(generated_text)
+                return generated_text

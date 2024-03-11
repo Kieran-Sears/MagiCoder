@@ -57,7 +57,8 @@ class View:
         if not event.state & (1 << 0) or event is None:
             self.loading_spinner = self.show_loading_spinner()
             input_text = self.input_textbox.get("1.0", "end-1c")
-            self.controller.submit(input_text)
+            result = self.controller.submit(input_text)
+            self.print_generated_text(result)
             if self.loading_spinner:
                     self.loading_spinner.withdraw()
 
